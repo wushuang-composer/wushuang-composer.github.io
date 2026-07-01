@@ -1,11 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>吴双 Composer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吴双 | Composer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d0d;
+    color:#ffffff;
+    font-family:
+        "PingFang SC",
+        "Microsoft YaHei",
+        sans-serif;
+}
+
+.hero{
+    height:100vh;
+    background:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.75)
+        ),
+        url("banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:64px;
+    letter-spacing:10px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#c9c9c9;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.enter{
+    margin-top:50px;
+    border:1px solid #ffffff;
+    padding:14px 40px;
+    text-decoration:none;
+    color:#ffffff;
+    transition:.3s;
+}
+
+.enter:hover{
+    background:#ffffff;
+    color:#000000;
+}
+
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:100px 30px;
+}
+
+.section h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    color:#8c8c8c;
+    margin-bottom:50px;
+}
+
+.work{
+    background:#181818;
+    border-radius:18px;
+    padding:35px;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.work:hover{
+    transform:translateY(-5px);
+    background:#202020;
+}
+
+.work h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.work p{
+    color:#b9b9b9;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    border:1px solid #666;
+    padding:10px 28px;
+    text-decoration:none;
+    color:#ffffff;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffffff;
+    color:#000000;
+}
+
+footer{
+    text-align:center;
+    padding:80px 30px;
+    color:#777;
+    border-top:1px solid #222;
+}
+
+.contact{
+    margin-top:20px;
+    color:#999;
+    line-height:2;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .section h2{
+        font-size:32px;
+    }
+
+    .work h3{
+        font-size:22px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1>吴双 Composer</h1>
-    <p>我的作品集网站测试成功！</p>
+
+<script>
+var pwd = prompt("请输入访问密码");
+
+if(pwd !== "2026music"){
+    document.body.innerHTML =
+    "<h1 style='text-align:center;margin-top:200px;color:white;'>密码错误</h1>";
+}
+</script>
+
+<section class="hero">
+
+    <h1>吴双</h1>
+
+    <p>Composer · Arranger</p>
+
+    <p>舞剧 · 音乐剧 · 动画配乐</p>
+
+    <a class="enter" href="#works">
+        ENTER
+    </a>
+
+</section>
+
+<section class="section" id="works">
+
+    <h2>Selected Dance Works</h2>
+
+    <p class="subtitle">
+        群舞 · 女子群舞 · 少儿舞蹈作品
+    </p>
+
+    <div class="work">
+        <h3>群舞《墨兰图》</h3>
+        <p>原创群舞音乐作品。</p>
+        <a class="btn" href="#" target="_blank">
+            观看视频
+        </a>
+    </div>
+
+    <div class="work">
+        <h3>群舞《灯坊画影》</h3>
+        <p>原创群舞音乐作品。</p>
+        <a class="btn" href="#" target="_blank">
+            观看视频
+        </a>
+    </div>
+
+    <div class="work">
+        <h3>群舞《柱石长歌》</h3>
+        <p>原创群舞音乐作品。</p>
+        <a class="btn" href="#" target="_blank">
+            观看视频
+        </a>
+    </div>
+
+    <div class="work">
+        <h3>女子群舞《一世三簪》</h3>
+        <p>原创女子群舞音乐作品。</p>
+        <a class="btn" href="#" target="_blank">
+            观看视频
+        </a>
+    </div>
+
+    <div class="work">
+        <h3>少儿群舞《惠海晨曦》</h3>
+        <p>原创少儿群舞音乐作品。</p>
+        <a class="btn" href="#" target="_blank">
+            观看视频
+        </a>
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>吴双 · Composer</h3>
+
+    <div class="contact">
+        微信：你的微信号<br>
+        邮箱：your@email.com
+    </div>
+
+    <br>
+
+    © Wu Shuang Composer
+
+</footer>
+
 </body>
 </html>
